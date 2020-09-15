@@ -1,0 +1,169 @@
+// Containers
+.container {
+  width: 100%;
+  padding: 0 15px;
+  max-width: 1366px;
+  margin: 0 auto;
+
+  &--min {
+    max-width: 850px;
+  }
+}
+
+// Flex items
+.flex {
+  display: flex;
+}
+
+.flex-inline {
+  display: inline-flex;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0;
+}
+
+.flex-auto {
+  flex: 1 1 auto;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-start {
+  align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+// Font
+.font-bold {
+  font-weight: 700;
+}
+
+.font-medium {
+  font-weight: 500;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.font-light {
+  font-weight: 300;
+}
+
+// Width / Height
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+// text position
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+// Transform
+.revert {
+  transform: rotate(180deg);
+}
+
+// cursor
+.pointer {
+  cursor: pointer;
+}
+
+// Text
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-trans-none {
+  text-transform: none;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+.text-under {
+  text-decoration: underline;
+}
+
+// Activity
+.pointer-events {
+  pointer-events: none !important;
+  opacity: .6 !important;
+}
+
+// Position
+.relative {
+  position: relative;
+}
+
+.sticky {
+  position: sticky;
+}
+
+// Animation
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 0.5s ease-in;
+}
+
+.transition {
+  transition: all .2s ease-out;
+}
+
+// btn
+.btn {
+  padding: 10px 15px;
+  background-color: #efefef;
+  outline: none;
+  transition: all .2s ease-out;
+  color: #000;
+
+  &:hover {
+    opacity: .7;
+  }
+}
+
+// text
+.text {
+
+}
