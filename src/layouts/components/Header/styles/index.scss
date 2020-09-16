@@ -36,10 +36,38 @@
     &-item {
       transition: all .2s ease-out;
       color: #ffffff;
+      position: relative;
+
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0;
+        pointer-events: none;
+        transition: all .2s ease-out;
+        background: url("covid-icon.svg") no-repeat center center;
+      }
+
+      &::before {
+        left: calc(100% + 5px);
+      }
+
+      &::after {
+        right: calc(100% + 5px);
+      }
 
       &:hover {
-        opacity: .7;
+        //opacity: .7;
         color: #ffffff;
+
+        &::before,
+        &::after {
+          opacity: 1;
+        }
       }
 
       &.active {

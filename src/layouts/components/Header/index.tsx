@@ -1,7 +1,7 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
-import { HeaderProps } from "./index.props";
-import HeaderIcon from "../../../media/covid-icon.svg";
+import {NavLink} from "react-router-dom";
+import {HeaderProps} from "./index.props";
+import CovidIcon from "../../../media/covid-icon.svg";
 
 import "./styles/index.scss";
 
@@ -12,7 +12,7 @@ const Header: React.FC<HeaderProps> = () => {
             <div className="container">
                 <div className="header__inner">
                     <NavLink to="/" className="header__title">
-                        <img className="header__title-icon" src={ HeaderIcon } alt=""/>
+                        <img className="header__title-icon" src={CovidIcon} alt=""/>
                         <div className="header__title-text">COVID-19</div>
                     </NavLink>
                     <div className="header__nav">
