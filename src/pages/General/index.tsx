@@ -1,11 +1,16 @@
 import React from "react";
 import MainLayout from "../../layouts/MainLayout/MainLayout";
+import Heading from "./components/Heading";
+
+import "./styles/index.scss";
 
 const General: React.FC = (): JSX.Element => {
 
     return (
         <MainLayout>
-            <h1>General</h1>
+            <div className="general">
+                <Heading />
+            </div>
         </MainLayout>
     )
 };

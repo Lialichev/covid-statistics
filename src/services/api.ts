@@ -1,6 +1,6 @@
-import { create } from 'apisauce';
+import { create, ApisauceInstance } from 'apisauce';
 
-export const api = create({
+export const api: ApisauceInstance = create({
     baseURL: 'https://api.covid19api.com/',
     headers: {
         'Content-Type': 'application/json',
