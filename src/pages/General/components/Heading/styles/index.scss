@@ -1,0 +1,26 @@
+.heading {
+  height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &__main-title {
+    font-size: 85px;
+    font-weight: 700;
+  }
+
+  &__second-title {
+    font-size: 60px;
+    font-weight: 300;
+  }
+
+  &__top-photo {
+    position: absolute;
+    top: 35%;
+    width: 313px;
+    left: 75%;
+    transform: translate(-75%, -35%);
+    pointer-events: none;
+    user-select: none;
+  }
+}

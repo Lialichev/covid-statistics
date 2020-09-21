@@ -1,6 +1,7 @@
 .header {
   padding: 15px 0;
   background-color: #000000;
+  overflow: hidden;
 
   &__inner {
     display: flex;
@@ -49,7 +50,7 @@
         opacity: 0;
         pointer-events: none;
         transition: all .2s ease-out;
-        background: url("covid-icon.svg") no-repeat center center;
+        background: url("../../../../media/covid-icon-green.svg") no-repeat center center;
       }
 
       &::before {
@@ -61,7 +62,6 @@
       }
 
       &:hover {
-        //opacity: .7;
         color: #ffffff;
 
         &::before,
