@@ -39,8 +39,7 @@
       color: #ffffff;
       position: relative;
 
-      &::before,
-      &::after {
+      &::before{
         content: '';
         position: absolute;
         width: 15px;
@@ -51,21 +50,13 @@
         pointer-events: none;
         transition: all .2s ease-out;
         background: url("../../../../media/covid-icon-green.svg") no-repeat center center;
-      }
-
-      &::before {
-        left: calc(100% + 5px);
-      }
-
-      &::after {
         right: calc(100% + 5px);
       }
 
       &:hover {
         color: #ffffff;
 
-        &::before,
-        &::after {
+        &::before {
           opacity: 1;
         }
       }
