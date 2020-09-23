@@ -11,7 +11,7 @@
   &__boxes {
     display: flex;
     flex-wrap: wrap;
-    margin: -15px;
+    margin: -10px;
     margin-top: 90px;
   }
 
@@ -20,7 +20,6 @@
     width: 100%;
     padding: 25px;
     background-color: #fff;
-    font-size: 45px;
 
     &--50 {
       width: calc((100% / 2) - 20px);
@@ -29,5 +28,14 @@
     &--33 {
       width: calc((100% / 3) - 20px);
     }
+  }
+
+  &__number {
+    font-size: 45px;
+    font-weight: 700;
+  }
+
+  &__text {
+    font-size: 18px;
   }
 }

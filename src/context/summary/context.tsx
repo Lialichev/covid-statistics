@@ -1,14 +1,16 @@
 import { createContext } from "react";
 
+export interface IGlobal {
+    NewConfirmed: number,
+    TotalConfirmed: number,
+    NewDeaths: number,
+    TotalDeaths: number,
+    NewRecovered: number,
+    TotalRecovered: number,
+}
+
 export interface ISummaryContext {
-    global: {
-        NewConfirmed: number,
-        TotalConfirmed: number,
-        NewDeaths: number,
-        TotalDeaths: number,
-        NewRecovered: number,
-        TotalRecovered: number,
-    } | null;
+    global: IGlobal | null;
     countries: object[] | null;
     isLoad: boolean;
     isError: boolean;
