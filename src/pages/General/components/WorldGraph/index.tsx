@@ -4,17 +4,17 @@ import { ISummaryContext, SummaryContext } from "../../../../context/summary/con
 import "./styles/index.scss";
 
 const WorldGraph: React.FC = (): JSX.Element => {
-    const { getSummary } = useContext<ISummaryContext>(SummaryContext);
+    const {  } = useContext<ISummaryContext>(SummaryContext);
 
     useEffect(() => {
-        getSummary();
-    }, [ getSummary ]);
+
+    }, [  ]);
 
     return (
-        <div className="world-situation">
+        <div className="world-graph">
             <div className="container">
-                <div className="world-situation__inner">
-                    <div className="world-situation__title">
+                <div className="world-graph__inner">
+                    <div className="title">
                         World graph
                     </div>
                 </div>

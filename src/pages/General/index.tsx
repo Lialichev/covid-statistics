@@ -10,9 +10,9 @@ import "./styles/index.scss";
 const General: React.FC = (): JSX.Element => (
     <MainLayout>
         <div className="general">
-            <Heading/>
-            <WorldSituation />
-            <WorldGraph />
+            <Heading />
+            <WorldSituation title="World situation"/>
+            <WorldGraph/>
         </div>
     </MainLayout>
 );

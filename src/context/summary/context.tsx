@@ -35,7 +35,7 @@ export const init: ISummaryContext = {
     global: null,
     isLoad: false,
     isError: false,
-    getSummary: () => {}
+    getSummary: () => {},
 }
 
 export const SummaryContext = createContext<ISummaryContext>(init);
