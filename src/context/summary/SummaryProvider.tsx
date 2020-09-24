@@ -9,13 +9,12 @@ const SummaryProvider: React.FC = ({ children }) => {
     const getSummary = useCallback(() => {
         setState(prev => ({ ...prev, isLoad: true, isError: false }));
 
-        API.get('/summary')
+        API.get('/all')
             .then(({ ok, data }: ApiResponse<any>) => {
                 if(ok) {
                     setState(prev => ({
                         ...prev,
-                        global: data.Global,
-                        countries: data.Countries,
+                        global: data,
                         isLoad: false
                     }));
                 } else {

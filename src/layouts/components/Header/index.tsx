@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { HeaderProps } from "./index.props";
+import { HeaderProps } from "./props/index.props";
 import CovidIcon from "../../../media/covid-icon.svg";
 import { routeNav } from "../../../config/route.nav";
 

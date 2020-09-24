@@ -1,5 +1,5 @@
 import React from "react";
-import { MainLayoutProps } from "./index.props";
+import { MainLayoutProps } from "./props/index.props";
 import Header from "../components/Header";
 
 import "./styles/index.scss";

@@ -1,17 +1,31 @@
 import { createContext } from "react";
 
 export interface IGlobal {
-    NewConfirmed: number,
-    TotalConfirmed: number,
-    NewDeaths: number,
-    TotalDeaths: number,
-    NewRecovered: number,
-    TotalRecovered: number,
+    updated?: number;
+    cases?: number;
+    todayCases?: number;
+    deaths?: number;
+    todayDeaths?: number;
+    recovered?: number;
+    todayRecovered?: number;
+    active?: number;
+    critical?: number;
+    casesPerOneMillion?: number;
+    deathsPerOneMillion?: number;
+    tests?: number;
+    testsPerOneMillion?: number;
+    population?: number;
+    oneCasePerPeople?: number;
+    oneDeathPerPeople?: number;
+    oneTestPerPeople?: number;
+    activePerOneMillion?: number;
+    recoveredPerOneMillion?: number;
+    criticalPerOneMillion?: number;
+    affectedCountries?: number;
 }
 
 export interface ISummaryContext {
     global: IGlobal | null;
-    countries: object[] | null;
     isLoad: boolean;
     isError: boolean;
     getSummary: () => void;
@@ -19,7 +33,6 @@ export interface ISummaryContext {
 
 export const init: ISummaryContext = {
     global: null,
-    countries: null,
     isLoad: false,
     isError: false,
     getSummary: () => {}

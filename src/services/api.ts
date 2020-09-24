@@ -1,7 +1,7 @@
 import { create, ApisauceInstance } from 'apisauce';
 
 const api: ApisauceInstance = create({
-    baseURL: 'https://api.covid19api.com/',
+    baseURL: 'https://corona.lmao.ninja/v2/',
     headers: {
         'Content-Type': 'application/json',
         'accept': 'application/json',
