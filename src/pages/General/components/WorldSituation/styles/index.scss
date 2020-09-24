@@ -28,15 +28,38 @@
     &--33 {
       width: calc((100% / 3) - 20px);
     }
+
+    &--lightPink {
+      background-color: #FFE3E2;
+    }
+
+    &--gray {
+      background-color: #c7c7c7;
+    }
+
+    &--lightGreen {
+      background-color: #EAF5F1;
+    }
   }
 
   &__number {
-    font-size: 45px;
+    font-size: 55px;
     font-weight: 700;
   }
 
   &__text {
     font-size: 18px;
     margin-top: 10px;
+  }
+
+  &__updated {
+    color: #fff;
+    margin-top: 15px;
+  }
+
+  &__more {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
   }
 }

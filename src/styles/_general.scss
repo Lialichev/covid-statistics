@@ -152,13 +152,29 @@
 
 // btn
 .btn {
-  padding: 10px 15px;
-  background-color: #efefef;
+  padding: 10px 50px;
+  background-color: #000;
   outline: none;
   transition: all .2s ease-out;
-  color: #000;
+  color: #fff;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 18px;
+  border: 2px solid #000;
 
   &:hover {
-    opacity: .7;
+    color: #000;
+    background-color: #fff;
+  }
+
+  &--white {
+    color: #000;
+    background-color: #fff;
+    border-color: #fff;
+
+    &:hover {
+      color: #fff;
+      background-color: #000;
+    }
   }
 }
