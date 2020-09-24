@@ -53,6 +53,6 @@ const WorldSituation: React.FC<WorldSituationProps> = ({ title }): JSX.Element =
             </div>
         </div>
     );
-}
+};
 
 export default WorldSituation;
