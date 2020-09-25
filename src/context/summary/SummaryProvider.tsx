@@ -38,5 +38,4 @@ const SummaryProvider: React.FC = ({ children }) => {
         </SummaryContext.Provider>
     );
 };
-
 export default SummaryProvider;

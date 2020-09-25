@@ -4,6 +4,7 @@ import numeral from "numeral";
 import clsx from "clsx";
 import moment from "moment";
 import { ISummaryContext, SummaryContext } from "../../../../context/summary/context";
+import withSummary from "../../../../context/summary/withSummary";
 import { WorldSituationProps } from "./props/index.props";
 import get from "lodash/get";
 import { world_situation_card } from "./presets/index.presets";
@@ -41,7 +42,8 @@ const WorldSituation: React.FC<WorldSituationProps> = ({ title }): JSX.Element =
                             }
                         </div>
                         <div className="world-situation__updated">
-                            Information as of { moment(global?.updated).format('MMMM DD, hh:mm a') }
+                            Information as
+                            of { moment(global?.updated).format('MMMM DD, hh:mm a') } ({ moment(global?.updated).fromNow() })
                         </div>
                         <div className="world-situation__more">
                             <Link to="/" className="btn btn--white">
@@ -55,4 +57,4 @@ const WorldSituation: React.FC<WorldSituationProps> = ({ title }): JSX.Element =
     );
 };
 
-export default WorldSituation;
+export default withSummary(WorldSituation);

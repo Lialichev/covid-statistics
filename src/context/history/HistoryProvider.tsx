@@ -1,41 +1,41 @@
 import React, { useState, useCallback } from "react";
-import { SummaryContext, ISummaryContext, init } from "./context";
+import { HistoryContext, IHistoryContext, init } from "./context";
 import API from "../../services/api";
 import { ApiResponse } from "apisauce";
 
 const HistoryProvider: React.FC = ({ children }) => {
-    const [ state, setState ] = useState<ISummaryContext>(init);
+    const [ state, setState ] = useState<IHistoryContext>(init);
 
-    const getSummary = useCallback(() => {
+    const getHistory = useCallback(() => {
         setState(prev => ({ ...prev, isLoad: true, isError: false }));
 
-        API.get('/all')
-            .then(({ ok, data }: ApiResponse<any>) => {
-                if(ok) {
-                    setState(prev => ({
-                        ...prev,
-                        global: data,
-                        isLoad: false
-                    }));
-                } else {
-                    setState(prev => ({
-                        ...prev,
-                        isLoad: false,
-                        isError: true,
-                    }));
-                }
-            })
+        // API.get('/all')
+        //     .then(({ ok, data }: ApiResponse<any>) => {
+        //         if(ok) {
+        //             setState(prev => ({
+        //                 ...prev,
+        //                 global: data,
+        //                 isLoad: false
+        //             }));
+        //         } else {
+        //             setState(prev => ({
+        //                 ...prev,
+        //                 isLoad: false,
+        //                 isError: true,
+        //             }));
+        //         }
+        //     })
     }, []);
 
     return (
-        <SummaryContext.Provider
+        <HistoryContext.Provider
             value={ {
                 ...state,
-                getSummary,
+                getHistory,
             } }
         >
             { children }
-        </SummaryContext.Provider>
+        </HistoryContext.Provider>
     );
 };
 

@@ -17,4 +17,4 @@ const General: React.FC = (): JSX.Element => (
     </MainLayout>
 );
 
-export default withSummary(General);
+export default General;

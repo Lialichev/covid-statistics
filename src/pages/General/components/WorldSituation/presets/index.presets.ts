@@ -20,7 +20,7 @@ export const world_situation_card: Array<WorldSituationCardProps> = [
     },
     {
         format: '+0,0',
-        description: 'new cases per day',
+        description: 'new confirmed cases per day',
         activeClass: 'world-situation__card--33 world-situation__card--lightPink',
         key: 'todayCases',
     },

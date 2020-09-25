@@ -1,8 +1,8 @@
 import React from "react";
-import HistoryProvider from "./SummaryProvider";
+import HistoryProvider from "./HistoryProvider";
 
-export function withSummary<T>(Component: React.ComponentType<T>) {
-    return class SummaryComponent extends React.Component<T> {
+export function withHistory<T>(Component: React.ComponentType<T>) {
+    return class HistoryComponent extends React.Component<T> {
         render() {
             return (
                 <HistoryProvider>
@@ -13,4 +13,4 @@ export function withSummary<T>(Component: React.ComponentType<T>) {
     }
 }
 
-export default withSummary;
+export default withHistory;
